@@ -361,7 +361,8 @@ angular.module('ui.bootstrap.typeahead', ['ui.bootstrap.debounce', 'ui.bootstrap
         $item: item,
         $model: model,
         $label: parserResult.viewMapper(originalScope, locals),
-        $event: evt
+        $event: evt,
+        $matches: scope.matches
       });
 
       resetMatches();
