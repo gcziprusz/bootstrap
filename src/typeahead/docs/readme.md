@@ -82,10 +82,10 @@ This directive works with promises, meaning you can retrieve matches using the `
   _(Default: `null`)_ -
   A callback executed when a `keyup` event that might trigger a selection occurs. Selection will only occur if this function returns true.
 
-* `typeahead-on-select($item, $model, $label, $event)`
+* `typeahead-on-select($item, $model, $label, $event, $matches)`
   <small class="badge">$</small>
   _(Default: `null`)_ -
-  A callback executed when a match is selected. $event can be undefined if selection not triggered from a user event.
+  A callback executed when a match is selected. $event can be undefined if selection not triggered from a user event. $matches is an array of match objects.
 
 * `typeahead-popup-template-url`
   _(Default: `uib/template/typeahead/typeahead-popup.html`)_ -
